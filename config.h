@@ -11,7 +11,7 @@ static const Block blocks[] = {
 	{"cpu: ", "sensors | awk '/Package id/{print $4}'", 10, 0},
 	{"bat: ", "batstat", 10, 8},
 	{"", "date '+%a %d %b - %H:%M'", 60, 0},
-	{"", "echo \"#$((($(date +%s) - $(date -d 2004-06-09 +%s)) / 86400))\"", 60*60, 0},
+	{"", "echo \"#$((($(date +%s) - $(date -d 2004-06-16 +%s)) / 86400))\"", 60*60, 0},
 };
 
 // sets delimeter between status commands. NULL character ('\0') means no delimeter.
